@@ -1,0 +1,336 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo h1 {
+    font-size: 28px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.navmenu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navmenu ul li a {
+    color: #343a40;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navmenu ul li a.active,
+.navmenu ul li a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../img/hero-img.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.hero .btn-get-started {
+    background: #007bff;
+    color: #ffffff;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn-get-started:hover {
+    background: #0056b3;
+    color: #ffffff;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#about h2 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#about .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+}
+
+#about .about-photo {
+    margin: 20px 0;
+}
+
+#about .profile-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    border-radius: 0;
+}
+
+#about .about-data {
+    margin: 20px 0;
+}
+
+#about .about-data ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services ul li {
+    font-size: 18px;
+    color: #343a40;
+    margin: 10px 0;
+}
+
+/* General Container */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 100%;
+    width: 600px; /* Sesuaikan lebar sesuai kebutuhan */
+}
+
+/* Video Container */
+.video-container {
+    width: 100%; /* Agar sesuai dengan container */
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border: 3px solid #007bff;
+    border-radius: 10px;
+}
+
+/* PDF Download Section */
+.pdf-container {
+    margin-top: 20px; /* Jarak antar elemen */
+    width: 100%; /* Agar sesuai dengan container */
+    text-align: center;
+}
+
+.pdf-container .btn-download {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.pdf-container .btn-download:hover {
+    background-color: #0056b3;
+}
+
+/* Resources Section */
+#resources {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #f9f9f9; /* Warna latar belakang lembut */
+    color: #333; /* Warna teks */
+}
+
+#resources h2 {
+    color: #007bff; /* Warna judul */
+    margin-bottom: 15px;
+}
+
+#resources p {
+    font-size: 18px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+#resources .btn-resources {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#resources .btn-resources:hover {
+    background-color: #0056b3;
+}
+
+/* Motivation Section */
+#motivation {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #f9f9f9; /* Warna latar belakang lembut */
+    color: #333; /* Warna teks */
+}
+
+#motivation h2 {
+    color: #007bff; /* Warna judul */
+    margin-bottom: 15px;
+}
+
+#motivation p {
+    font-size: 18px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+#motivation .btn-motivation {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#motivation .btn-motivation:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#contact h2 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #343a40;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#motivation, #about-biology {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #f9f9f9; /* Warna latar belakang lembut */
+    color: #333; /* Warna teks */
+}
+
+/* Media Section */
+#media {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#media .media-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+#media .column {
+    flex: 1;
+    max-width: 48%; /* Adjust as needed */
+    text-align: center;
+    margin-bottom: 20px; /* Add margin for better spacing */
+}
+
+#media .video-column video {
+    width: 100%;
+    height: 500px;
+    border: 3px solid #007bff;
+    border-radius: 10px;
+}
+
+#media .pdf-column iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
